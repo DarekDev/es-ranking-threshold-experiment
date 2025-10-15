@@ -453,7 +453,7 @@ def main():
         json.dump(output_data, f, indent=2)
     
     print(f"\n💾 Results saved to: {output_file}")
-    print(f"🎉 EVALUATION COMPLETE!")
+    print(f"✓ Evaluation complete")
 
 if __name__ == "__main__":
     main() 

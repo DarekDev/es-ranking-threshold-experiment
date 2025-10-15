@@ -183,10 +183,10 @@ See `configs/optimal_*.txt` for full configurations.
 If you use this code or methodology, please cite:
 
 ```bibtex
-@article{mlodnicki2025reproducible,
+@article{author2025reproducible,
   title={A Reproducible Workflow for Rank-Then-Threshold Retrieval under Extreme Class Imbalance},
-  author={Młodnicki, Dariusz},
-  journal={SN Computer Science},
+  author={[Author Name]},
+  journal={[Journal Name]},
   year={2025},
   note={Manuscript under review}
 }
@@ -200,7 +200,6 @@ MIT License - see LICENSE file for details
 
 For questions or issues:
 - GitHub: https://github.com/DarekDev/es-ranking-threshold-experiment
-- Email: [Your email if you want to include it]
 
 ## Acknowledgments
 

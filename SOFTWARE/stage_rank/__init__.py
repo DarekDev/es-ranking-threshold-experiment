@@ -227,7 +227,7 @@ def train_model(input_file: str, config: dict, output_dir: str, mode: str = 'reg
     # Save results
     save_results(summary, str(output_path / 'training_summary.txt'))
     
-    print(f"\n🎉 Training completed in {training_time:.1f} seconds!")
+    print(f"\n✓ Training completed in {training_time:.1f} seconds")
     print(f"📁 All files saved to: {output_dir}")
     print_warning("⚠️  Note: Metrics are computed on TEST SET ONLY to prevent data leakage")
     
