@@ -1,0 +1,17 @@
+{
+  "dataset": "RecSys Challenge 2015 (YooChoose)",
+  "preprocessing_date": "2025-10-15T10:42:41.087618",
+  "train_sessions": 14997,
+  "test_sessions": 3,
+  "train_pairs": 65886,
+  "test_pairs": 130,
+  "train_positive_rate": 0.04346902225055399,
+  "test_positive_rate": 0.16153846153846155,
+  "test_session_ids": [
+    840401,
+    9147137,
+    9450867
+  ],
+  "split_date": "2014-09-01",
+  "min_clicks_per_session": 3
+}

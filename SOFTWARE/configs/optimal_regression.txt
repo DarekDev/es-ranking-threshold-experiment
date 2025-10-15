@@ -1,0 +1,37 @@
+# Optimal Regression Configuration - RecSys 2015 Dataset
+# Same parameters as original experiment, adapted for e-commerce domain
+# Validation R² target = 0.40+
+
+# ================================
+# CORE SETTINGS
+# ================================
+target_column = item_purchased
+train_test_split = 0.2
+random_seed = 42
+
+# Text feature extraction
+text_method = tfidf
+max_tfidf_features = 2000
+
+# Column exclusions to prevent data leakage
+exclude_columns = target,item_session_id
+
+# ================================
+# REGRESSION MODE SETTINGS
+# ================================
+# Binary target mapping: purchased (585) vs not purchased (577)
+map_target =
+    577:0.0                         # browsed but not purchased
+    585:1.0                         # purchased
+
+# ================================
+# OPTIMAL MODEL HYPERPARAMETERS (Regression)
+# ================================
+n_estimators = 500
+max_depth = 12
+learning_rate = 0.01
+subsample = 0.8
+colsample_bytree = 0.6
+min_child_weight = 1
+reg_alpha = 0
+reg_lambda = 0.5 

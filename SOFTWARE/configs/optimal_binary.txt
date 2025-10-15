@@ -1,0 +1,37 @@
+# Optimal Binary Classification Configuration - RecSys 2015 Dataset
+# Same parameters as original experiment, adapted for e-commerce domain
+# Validation F1 target = 0.54+
+
+# ================================
+# CORE SETTINGS
+# ================================
+target_column = item_purchased
+train_test_split = 0.2
+random_seed = 42
+
+# Text feature extraction
+text_method = tfidf
+max_tfidf_features = 2000
+
+# Column exclusions to prevent data leakage
+exclude_columns = target,item_session_id
+
+# ================================
+# BINARY CLASSIFICATION SETTINGS
+# ================================
+# Map target values to binary labels (0 = not purchased, 1 = purchased)
+binary_labels =
+    0:[577]    # browsed but not purchased
+    1:[585]    # purchased
+
+# ================================
+# OPTIMAL MODEL HYPERPARAMETERS (Binary)
+# ================================
+n_estimators = 500
+max_depth = 9
+learning_rate = 0.2
+subsample = 1.0
+colsample_bytree = 0.6
+min_child_weight = 1
+reg_alpha = 0
+reg_lambda = 0.5 
